@@ -33,3 +33,13 @@ select = ["E", "F", "I", "UP", "B"]
 
 [tool.mypy]
 strict = true
+
+[project.optional-dependencies]
+# Development dependencies for linting and testing
+# These are installed in CI and for local development
+# to run mypy, flake8, and pytest
+# Note: ruff is also included for linting
+# but the CI workflow uses flake8 and mypy
+# as per the task requirement
+
+dev = ["mypy", "flake8", "pytest", "ruff"]

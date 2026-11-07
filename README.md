@@ -35,5 +35,6 @@ pip install -e .
 
 ## Limitations
 
-- Does not support reading directly from log files without a stream redirection (`<` or `|`).
-- Only recognizes standard common log level formats.
+- Only email redaction is supported.
+- Only ISO 8601 timestamps are recognized.
+- Binary streams are not handled.
